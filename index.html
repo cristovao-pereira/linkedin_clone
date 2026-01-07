@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV Profile — LinkedIn-style (Static)</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Top nav (visual only) -->
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <div class="brand__logo" aria-hidden="true">in</div>
+          <span class="brand__name">Profile</span>
+        </div>
+
+        <div class="search" aria-label="Search (visual only)">
+          <span class="search__icon" aria-hidden="true">🔎</span>
+          <input class="search__input" type="text" placeholder="Search" disabled />
+        </div>
+
+        <nav class="nav">
+          <a class="nav__item" href="#about">About</a>
+          <a class="nav__item" href="#experience">Experience</a>
+          <a class="nav__item" href="#education">Education</a>
+          <a class="nav__item" href="#skills">Skills</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container layout">
+      <!-- LEFT (main content) -->
+      <section class="col col--main">
+        <!-- Profile header card -->
+        <article class="card profile">
+          <div class="profile__banner" aria-hidden="true"></div>
+
+          <div class="profile__body">
+             <img
+    class="profile__photo"
+    src="https://via.placeholder.com/120"
+    alt="Profile photo placeholder"
+  />
+
+            <div class="profile__meta">
+              <div class="profile__headline">
+                <h1 class="profile__name">Your Name</h1>
+                <p class="profile__title">Senior Software Engineer • Ruby on Rails • React</p>
+              </div>
+
+              <div class="profile__info">
+                <span>São Paulo, Brazil</span>
+                <span class="dot">•</span>
+                <a href="#" class="link">Contact info</a>
+              </div>
+
+              <p class="profile__summary">
+                Focused and analytical engineer with 10+ years building web products.
+                Passionate about clean architecture, performance, and helping teams deliver reliably.
+              </p>
+
+              <div class="profile__actions">
+                <a class="btn btn--primary" href="#contact">Open to</a>
+                <a class="btn btn--secondary" href="#contact">Message</a>
+                <a class="btn btn--ghost" href="#contact">Connect</a>
+              </div>
+
+              <div class="profile__highlights">
+                <div class="pill">Open to: Remote</div>
+                <div class="pill">Tech: Rails, Postgres, AWS</div>
+                <div class="pill">Languages: PT/EN</div>
+              </div>
+            </div>
+
+            <aside class="profile__mini">
+              <div class="mini">
+                <div class="mini__logo" aria-hidden="true">🏢</div>
+                <div>
+                  <div class="mini__title">Current</div>
+                  <div class="mini__text">Company Name • Staff Engineer</div>
+                </div>
+              </div>
+              <div class="mini">
+                <div class="mini__logo" aria-hidden="true">🎓</div>
+                <div>
+                  <div class="mini__title">Education</div>
+                  <div class="mini__text">University • Degree</div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </article>
+
+        <!-- About -->
+        <article class="card" id="about">
+          <div class="card__header">
+            <h2 class="card__title">About</h2>
+          </div>
+          <div class="card__content">
+            <p>
+              Write your “About” like LinkedIn: 3–6 short lines, impact-first.
+              Mention industries, your strengths, and what roles you want.
+            </p>
+          </div>
+        </article>
+
+        <!-- Experience -->
+        <article class="card" id="experience">
+          <div class="card__header">
+            <h2 class="card__title">Experience</h2>
+          </div>
+          <div class="card__content">
+            <div class="item">
+              <div class="item__logo" aria-hidden="true">🏦</div>
+              <div class="item__body">
+                <div class="item__top">
+                  <h3 class="item__title">Staff Software Engineer</h3>
+                  <span class="item__meta">Company • Full-time</span>
+                </div>
+                <div class="item__meta">Jan 2023 – Present • Remote</div>
+                <ul class="bullets">
+                  <li>Led backend initiatives improving reliability and reducing incidents.</li>
+                  <li>Designed event-driven flows and optimized PostgreSQL queries.</li>
+                  <li>Mentored engineers; improved code review and testing standards.</li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Rails</span><span class="chip">PostgreSQL</span><span class="chip">AWS</span><span class="chip">React</span>
+                </div>
+              </div>
+            </div>
+
+            <hr class="divider" />
+
+            <div class="item">
+              <div class="item__logo" aria-hidden="true">🧾</div>
+              <div class="item__body">
+                <div class="item__top">
+                  <h3 class="item__title">Senior Software Engineer</h3>
+                  <span class="item__meta">Company • Full-time</span>
+                </div>
+                <div class="item__meta">2019 – 2022 • Brazil</div>
+                <ul class="bullets">
+                  <li>Built billing and payments features with strong observability.</li>
+                  <li>Improved performance with indexing and query refactors.</li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Ruby</span><span class="chip">Sidekiq</span><span class="chip">Redis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Education -->
+        <article class="card" id="education">
+          <div class="card__header">
+            <h2 class="card__title">Education</h2>
+          </div>
+          <div class="card__content">
+            <div class="item">
+              <div class="item__logo" aria-hidden="true">🎓</div>
+              <div class="item__body">
+                <div class="item__top">
+                  <h3 class="item__title">University Name</h3>
+                  <span class="item__meta">Degree • Field</span>
+                </div>
+                <div class="item__meta">2012 – 2016</div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Skills -->
+        <article class="card" id="skills">
+          <div class="card__header">
+            <h2 class="card__title">Skills</h2>
+          </div>
+          <div class="card__content">
+            <div class="skills">
+              <span class="skill">Ruby on Rails</span>
+              <span class="skill">PostgreSQL</span>
+              <span class="skill">React</span>
+              <span class="skill">TypeScript</span>
+              <span class="skill">AWS</span>
+              <span class="skill">Testing (RSpec/Jest)</span>
+              <span class="skill">System Design</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Contact -->
+        <article class="card" id="contact">
+          <div class="card__header">
+            <h2 class="card__title">Contact</h2>
+          </div>
+          <div class="card__content">
+            <p class="contact-line">
+              <span class="contact-label">Email:</span>
+              <a class="link" href="mailto:you@example.com">you@example.com</a>
+            </p>
+            <p class="contact-line">
+              <span class="contact-label">Website:</span>
+              <a class="link" href="#" target="_blank" rel="noreferrer">yourwebsite.com</a>
+            </p>
+            <p class="contact-line">
+              <span class="contact-label">GitHub:</span>
+              <a class="link" href="#" target="_blank" rel="noreferrer">github.com/yourhandle</a>
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <!-- RIGHT (sidebar) -->
+      <aside class="col col--side">
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Contact & Links</h2>
+          </div>
+          <div class="card__content list">
+            <a class="list__row link" href="#contact">Email</a>
+            <a class="list__row link" href="#contact">Portfolio</a>
+            <a class="list__row link" href="#contact">GitHub</a>
+            <a class="list__row link" href="#contact">LinkedIn</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">Highlights</h2>
+          </div>
+          <div class="card__content">
+            <ul class="bullets bullets--compact">
+              <li>10+ years building web products</li>
+              <li>Fintech + Payments experience</li>
+              <li>Technical interviewer + teacher</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h2 class="card__title">People also viewed</h2>
+          </div>
+          <div class="card__content">
+            <div class="pv">
+              <div class="pv__avatar" aria-hidden="true"></div>
+              <div>
+                <div class="pv__name">Jane Developer</div>
+                <div class="pv__role">Backend Engineer • Rails</div>
+              </div>
+            </div>
+            <div class="pv">
+              <div class="pv__avatar" aria-hidden="true"></div>
+              <div>
+                <div class="pv__name">John Engineer</div>
+                <div class="pv__role">Full-stack • React</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>Static LinkedIn-style CV • HTML + CSS only</span>
+        <span class="muted">Customize freely</span>
+      </div>
+    </footer>
+  </body>
+</html>
